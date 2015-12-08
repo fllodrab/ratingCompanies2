@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+    p Welcome to #{title}
+
+    h1 Nueva empresa
+    #newCompany.col
+    form(action="/crearEmpresa", method="post")
+        label(for='name') Nombre de la empresa
+            input(type='text', name='name')
+            br
+        label(for='rate') Calificación
+            input(type='number', name='rate')
+            br
+        label(for='submitBtn')
+            button(name='submitBtn') Enviar

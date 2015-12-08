@@ -1,0 +1,12 @@
+extends layout
+block content
+    h1= title
+    p Welcome to #{title}
+    h1 Empresa última creada
+    span#empresa #{name} - #{rate}
+
+    form(action='/listarEmpresas', method="post")
+        input(type='submit', value='Listar Empresas')
+
+    h1 Lista de empresas
+    span#listaEmpresas #{name} - #{rate}
