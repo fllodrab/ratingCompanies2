@@ -50,7 +50,7 @@ router.post('/listarEmpresas', function(req, res) {
             throw err;
         }
     });
-    
+
 });
 
 module.exports = router;
