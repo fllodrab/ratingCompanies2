@@ -16,7 +16,6 @@ var Empresa = new Schema({
 
 });
 
-
 var Company = mongoose.model('Company', Empresa);
 
 console.log("Nice!: All complete succesfully :D");
